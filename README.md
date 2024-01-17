@@ -1,27 +1,11 @@
-Project Title: University Management System
+Project Overview:
+You are tasked with designing and implementing a robust database system for a university. The system should be capable of managing information about students, courses, professors, departments, registrations, and grades.
 
-1. 
+Requirements:
 
-   Department - Student:
-o	Relationship Type: One-to-Many
-o	Explanation: One department can have many students, but each student is associated with only one department.
-•	Department - Professor:
-o	Relationship Type: One-to-Many
-o	Explanation: One department can have many professors, but each professor is associated with only one department.
-•	Professor - Course:
-o	Relationship Type: One-to-Many (assuming a professor can teach multiple courses)
-o	Explanation: One professor can teach multiple courses, but each course is taught by only one professor.
-•	Course - Student:
-o	Relationship Type: Many-to-Many (assuming a student can enroll in multiple courses, and a course can have multiple students)
-o	Explanation: A course can have multiple students enrolled, and a student can be enrolled in multiple courses. This is typically implemented using a junction table (e.g., Registration table) that stores pairs of CourseID and StudentID.
-registration table is between them
-
-•	Student - Grade:
-o	Relationship Type: One-to-Many (assuming a student can have multiple grades)
-o	Explanation: One student can have multiple grades (for different courses), but each grade is associated with only one student.
-•	Course - Grade:
-o	Relationship Type: One-to-Many (assuming a course can have multiple grades, one for each student)
-o	Explanation: One course can have multiple grades (one for each student who took the course), but each grade is associated with only one course.
+1. Entity-Relationship Diagram (ERD):
+   - Create a detailed ERD representing the relationships between entities in the university system.
+   - Entities: Student, Professor, Course, Department, Registration, Grade.
 
 2. Database Schema Design:
    - Based on the ERD, design a normalized relational database schema for the university system.
